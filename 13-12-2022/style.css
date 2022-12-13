@@ -1,0 +1,88 @@
+/* Selettore universale */
+* {
+  /* border: 2px solid black; */
+}
+
+/* l'unita di misura rem si riferisce all'html */
+html {
+  /* font-size: 26px; */
+}
+
+/* l'unita di misura em si riferisce al body */
+/* Selettore di tipo tag */
+body {
+  /* font-size: 42px; */
+  margin: 0;
+  color: lightseagreen;
+}
+
+/* Selettore di tipo classe */
+.title {
+  color: red;
+  border: 0;
+}
+
+/* Selettore di tipo ID */
+#subTitle {
+  color: green;
+  /* font-size: 2em; */
+}
+
+/* p {
+  transition: all 1s;
+  cursor: pointer;
+}
+
+p:hover {
+  background-color: red;
+  color: white;
+} */
+
+/* P contenuta esclusivamente dentro la ul */
+.listItem p {
+  font-size: 2rem;
+}
+
+/* Hero -- start */
+.hero {
+  position: relative;
+  color: rgba(240, 240, 240);
+  text-align: center;
+}
+
+.hero__title {
+  position: absolute;
+  top: 100px;
+  left: calc(50% - 225px);
+  width: 450px;
+  height: 500px;
+  font-size: 3.5rem;
+}
+
+.hero__description {
+  position: absolute;
+  top: 320px;
+  font-size: 1.2rem;
+  width: 450px;
+  left: calc(50% - 225px);
+}
+
+.hero__img {
+  filter: grayscale(0.8) contrast(0.4) saturate(0.8) sepia(0.4);
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.hero__btn {
+  position: absolute;
+  left: calc(50% - 100px);
+  bottom: 50px;
+  padding: 5px 20px;
+  width: 200px;
+  border-radius: 6px;
+  border: 0;
+  background-color: white;
+}
+
+/* Hero -- end */
