@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;800&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  background: rgb(236, 255, 236);
+}
+
+nav {
+  background: rgb(156, 202, 156);
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+  justify-content: space-evenly;
+  align-items: center;
+
+  height: 50px;
+  list-style-type: none;
+}
+
+/* .square {
+  margin: 0 auto;
+  padding: 20px;
+  border: 10px solid black;
+  width: 200px;
+  height: 200px;
+  background: lightseagreen;
+} */
+
+.hero {
+  position: relative;
+  height: 400px;
+}
+
+.hero__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero h1 {
+  color: white;
+  font-size: 2rem;
+  transform: translate(200px, -300px);
+  width: 280px;
+}
+
+.hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+
+.getStarted {
+  padding: 20px 40px;
+  width: 70%;
+  color: white;
+  background: rgb(93, 167, 93);
+  font-size: 1.8rem;
+}
+
+.features {
+  width: 30%;
+}
+
+.features img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.getStarted input {
+  padding: 10px 40px 10px 10px;
+  border: 0;
+  border-radius: 12px;
+  outline: none;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.35);
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  height: 140px;
+  background: rgb(18, 32, 18);
+  color: white;
+}
+
+footer p {
+  align-self: flex-start;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+a:hover {
+  color: rgb(93, 167, 93);
+}
+
+a:active {
+  color: rgb(43, 97, 43);
+}
+
+.ball {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background: tomato;
+  border-radius: 100%;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.35);
+}
