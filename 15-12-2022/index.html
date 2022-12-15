@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <form>
+      <h2>Welcome back</h2>
+      <input
+        class="emailInput"
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Enter your email"
+        required
+      />
+      <input
+        class="passInput"
+        type="password"
+        name="password"
+        id="password"
+        placeholder="Password"
+        required
+      />
+      <div class="info">
+        <div class="infoCheckbox">
+          <input type="checkbox" name="rememberMe" id="rememberMe" />
+          <label for="rememberMe">Remember me</label>
+        </div>
+        <a href="#">Forgot password</a>
+      </div>
+      <input class="btnInput" type="button" value="Sign in" />
+      <button class="btnInput">Sign in with Google</button>
+      <a href="#">Dont'have an account? Sign up</a>
+    </form>
+  </body>
+</html>
