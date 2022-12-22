@@ -1,0 +1,17 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+div {
+  width: 100px;
+  height: 180px;
+  background-color: teal;
+  transition: transform 0.35s;
+}
+
+div:hover {
+  transform: scale(1.4);
+}
