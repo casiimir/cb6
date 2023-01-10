@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.hero {
+  position: relative;
+  height: 300px;
+  width: 100vw;
+}
+
+.hero img {
+  width: 100vw;
+  height: 300px;
+  object-fit: cover;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 120px;
+  left: 50%;
+  color: white;
+  font-size: 3rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  height: 380px;
+  border-radius: 6px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+}
+
+.card img {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.card__title {
+  margin: 14px 0;
+  color: lightseagreen;
+}
+
+.card__description {
+  padding: 0px 12px;
+}
+
+.ball {
+  width: 100px;
+  height: 100px;
+  background-color: lightseagreen;
+  border-radius: 100%;
+  z-index: 9;
+}
