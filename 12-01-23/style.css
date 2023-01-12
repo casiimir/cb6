@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+  font-family: 'Playfair Display', serif;
+  background: rgb(218, 218, 218);
+}
+
+.todo-list {
+  margin: 0 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  border: 2px solid lightgrey;
+}
+
+.todo {
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgb(240, 240, 240);
+  width: 100%;
+  border-radius: 6px;
+}
+
+.circle-check {
+  border: 1px solid black;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+}
+
+.completed,
+.uncompleted {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  cursor: pointer;
+  transition: 0.35s;
+}
+
+.completed:hover,
+.uncompleted:hover {
+  background: rgba(137, 43, 226, 0.283);
+}
+
+.completed {
+  background-color: black;
+}
+
+.uncompleted {
+  border: 1px solid black;
+}
