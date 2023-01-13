@@ -1,0 +1,66 @@
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(28, 28, 28);
+  color: white;
+}
+
+h1 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-size: 72px;
+  background: linear-gradient(315deg, #fce043 0%, #fb7ba2 74%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.carousel {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.carousel__img {
+  width: 250px;
+  height: 300px;
+  border-radius: 8px;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+.shape {
+  position: absolute;
+  top: 50px;
+  width: 300px;
+  height: 360px;
+  background-color: #fce043;
+  background-image: linear-gradient(315deg, #fce043 0%, #fb7ba2 74%);
+  z-index: -1;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 180px;
+  border-bottom-left-radius: 180px;
+  border-bottom-right-radius: 100px;
+}
+
+.carousel__switch {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.carousel__switch button {
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border-radius: 100%;
+  border: 2px solid rgb(28, 28, 28);
+  color: rgb(28, 28, 28);
+  font-size: 1.4rem;
+  cursor: pointer;
+}
