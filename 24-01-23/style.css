@@ -1,0 +1,88 @@
+/* Esercizio Avanzato 23-01-23 */
+
+/* body {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.quote {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.35);
+}
+
+.quote p {
+  color: lightslategray;
+  text-align: right;
+  font-size: 0.9rem;
+}
+
+.quote p::before {
+  content: "cit. ";
+  font-style: italic;
+}
+
+.btn-quote {
+  position: fixed;
+  bottom: 20vh;
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  border: 0;
+  background-color: lightseagreen;
+  font-weight: bold;
+  color: white;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+}
+
+.btn-quote:hover {
+  background-color: darkcyan;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.35);
+} */
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.post {
+  width: 400px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid lightgrey;
+}
+
+.post__magical {
+  background-color: blueviolet;
+}
+
+.post__history {
+  background-color: brown;
+}
+
+.post__american {
+  background-color: navy;
+}
+
+.post__english {
+  background-color: tomato;
+}
+
+.post__fiction {
+  background-color: seagreen;
+}
+
+.post__classic {
+  background-color: yellowgreen;
+}
