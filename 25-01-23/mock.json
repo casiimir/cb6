@@ -1,0 +1,9 @@
+{
+  "firstKey": 1,
+  "secondKey": "string",
+  "thirdKey": [2, 3, 4],
+  "fourthKey": {
+    "a": 1,
+    "b": 2
+  }
+}
