@@ -1,0 +1,76 @@
+.movies {
+  margin: 10px 4%;
+}
+
+.top-rated,
+.most-popular,
+.upcoming {
+  display: flex;
+  gap: 10px;
+  padding: 14px;
+  overflow-x: auto;
+}
+
+.movie {
+  cursor: pointer;
+  filter: grayscale(0.75);
+  transition: all 0.35s;
+}
+
+.movie:hover {
+  filter: grayscale(0) contrast(1.2);
+  transform: scale(1.1);
+}
+
+.movie:active {
+  transform: scale(0.9);
+}
+
+.movie img {
+  width: 140px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.35);
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  display: none;
+}
+
+.modal .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+
+.modal .movie-modal {
+  display: flex;
+  width: 600px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 0 8px black;
+}
+
+.modal .movie-modal div {
+  padding: 20px 30px;
+  font-size: 0.9rem;
+}
+
+.modal .movie-modal img {
+  width: 300px;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
