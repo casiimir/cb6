@@ -1,0 +1,19 @@
+{
+  "list": [
+    {
+      "id": 1,
+      "name": "Pippo",
+      "email": "pippo@email.com"
+    },
+    {
+      "id": 2,
+      "name": "Pluto",
+      "email": "pluto@email.com"
+    },
+    {
+      "id": 3,
+      "name": "Paperino",
+      "email": "paperino@email.com"
+    }
+  ]
+}

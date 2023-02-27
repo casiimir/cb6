@@ -1,0 +1,30 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 20px 10px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.35);
+  border-radius: 12px;
+}
+
+h1 {
+  font-size: 1.4rem;
+}
+
+img {
+  width: 200px;
+}
+
+button {
+  width: 200px;
+}
+
+.quote {
+  width: 200px;
+  height: 200px;
+  border: 1px solid;
+  padding: 10px;
+  border-radius: 12px;
+}
