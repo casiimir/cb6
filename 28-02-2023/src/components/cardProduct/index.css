@@ -1,0 +1,22 @@
+.CardProduct {
+  width: 300px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.35);
+  border-radius: 12px;
+}
+
+.CardProduct img {
+  width: 300px;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+  filter: saturate(1.2) contrast(1.1);
+}
+
+.CardProduct hr {
+  border: 0;
+  width: 100px;
+  border-bottom: 1px solid lightblue;
+}
+
+.CardProduct__text-content {
+  padding: 10px 20px;
+}
