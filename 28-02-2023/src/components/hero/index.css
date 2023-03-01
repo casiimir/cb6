@@ -4,6 +4,8 @@
 
 .Hero img {
   height: 250px;
+  width: 100vw;
+  object-fit: cover;
 }
 
 .Hero h2 {

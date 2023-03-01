@@ -24,7 +24,7 @@ export const productsList = [
     description:
       "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
     price: 899,
-    discountPercentage: 17.94,
+    discountPercentage: 100,
     rating: 4.44,
     stock: 34,
     brand: "Apple",

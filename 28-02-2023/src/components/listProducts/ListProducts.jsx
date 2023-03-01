@@ -1,12 +1,11 @@
-import { productsList } from "../../mocks/productsList";
 import CardProduct from "../cardProduct";
 import "./index.css";
 
-const ListProducts = () => {
+const ListProducts = ({ listData }) => {
   return (
     <div className="ListProducts">
-      {productsList.map((product) => (
-        <CardProduct productData={product} />
+      {listData.map((product) => (
+        <CardProduct productData={product} key={product.id} />
       ))}
     </div>
   );

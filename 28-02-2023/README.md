@@ -1,11 +1,12 @@
 # Esercizio 1
 
-Creare un componente `<Header />` che preveda la presenza di una lista di links che mirano ad indirizzi a vostra scelta. Anche la scelta del css è a scelta dello studente.
+Riprodurre quanto fatto a lezione (in termini di funzionalità) - copia e incolla non basta, bisogna chiedersi come funziona man mano che lo si implementa...
 
 # Esercizio 2
 
-Creare un componente `<Footer />` che preveda la presenza di contenuto testuale e/o immagini a vostra scelta. Anche la scelta del css è a scelta dello studente.
+Creare una `<Gallery />`, posizionata tra la Hero e la lista dei prodotti. L'importante che le immagini vengano gestite tramile link remoto, all'interno di un array situtato allo stesso livello del componente `<Gallery />`.
 
 # Avanzato
 
-Creare un componente a scelta che implementi la logica delle props e che renda dinamica almeno una parte del componente (es. un titolo, un paragrafo, ...)
+- Sfogo alla creatività con un nuovo componente.
+- Aggiungere alla lista dei prodotti e alla gallery un titolo che identifichi la sezione.
