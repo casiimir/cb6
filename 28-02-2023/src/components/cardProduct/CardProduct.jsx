@@ -1,11 +1,13 @@
 import Button from "../button";
 import "./index.css";
 
-const CardProduct = ({ productData }) => {
+const CardProduct = ({ productData, setSingleProductModal }) => {
   const onGetStock = () =>
     alert(`Ci sono ${productData.stock} prodotti disponibili`);
 
-  const onImageClick = () => window.open(productData.images[0], "_self");
+  const onImageClick = () => {
+    setSingleProductModal(() => productData);
+  };
 
   return (
     <div

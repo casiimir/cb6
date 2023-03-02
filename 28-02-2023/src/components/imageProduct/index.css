@@ -1,0 +1,27 @@
+.ImageProduct {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.ImageProduct__overlay {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.ImageProduct img {
+  position: relative;
+  padding: 4px;
+  width: 500px;
+  height: 350px;
+  border: 1px dashed white;
+  object-fit: cover;
+}

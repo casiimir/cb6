@@ -1,12 +1,11 @@
 # Esercizio 1
 
-Riprodurre quanto fatto a lezione (in termini di funzionalità) - copia e incolla non basta, bisogna chiedersi come funziona man mano che lo si implementa...
+Riprodurre la funzionalità night-mode sul vostro progettino.
 
 # Esercizio 2
 
-Creare una `<Gallery />`, posizionata tra la Hero e la lista dei prodotti. L'importante che le immagini vengano gestite tramile link remoto, all'interno di un array situtato allo stesso livello del componente `<Gallery />`.
+Aggiungere o modificare il componente `<Gallery />`di modo che venga rappresentato come un carosello (presenza dei buttons cambio stato).
 
 # Avanzato
 
-- Sfogo alla creatività con un nuovo componente.
-- Aggiungere alla lista dei prodotti e alla gallery un titolo che identifichi la sezione.
+Replicare il funzionamento del dettaglio prodotto visto a lezione. Utilizzare una modale che si apre al click sul singolo prodotto. Il contenuto della stessa può essere una img o info generali sul prodotto.

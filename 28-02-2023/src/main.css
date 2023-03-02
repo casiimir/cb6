@@ -1,2 +1,19 @@
 .Main {
 }
+
+.dark-mode {
+  background-color: rgb(32, 32, 32);
+  color: rgb(225, 225, 225);
+}
+
+.toggle-mode {
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  background-color: transparent;
+  border: 0;
+  font-size: 2rem;
+  border: 1px solid white;
+  border-radius: 100%;
+  cursor: pointer;
+}
