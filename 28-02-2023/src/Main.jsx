@@ -1,6 +1,5 @@
 import { useState } from "react";
-import { productsList } from "./mocks/productsList";
-import Control from "./components/control";
+// import Control from "./components/control";
 import Hero from "./components/hero";
 import ImageProduct from "./components/imageProduct/ImageProduct";
 import ListProducts from "./components/listProducts/ListProducts";
@@ -17,11 +16,8 @@ const Main = () => {
     <div className={`Main ${isDarkMode && "dark-mode"}`}>
       <Hero title="Store" />
       <Slider />
-      <Control listDataLength={productsList.length} />
-      <ListProducts
-        listData={productsList}
-        setSingleProductModal={setSingleProductModal}
-      />
+      {/* <Control listDataLength={productsList.length} /> */}
+      <ListProducts setSingleProductModal={setSingleProductModal} />
       <button
         className="toggle-mode"
         onClick={() => setDarkMode((prev) => !prev)}

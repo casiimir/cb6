@@ -1,8 +1,31 @@
 .ListProducts {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 20px;
   flex-wrap: wrap;
   padding: 20px 10px;
+}
+
+.ListProducts__pagination {
+  display: flex;
+  gap: 5px;
+}
+
+.ListProducts__pagination button {
+  height: 30px;
+  width: 30px;
+  border: 0;
+  border-radius: 100%;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.35);
+  font-size: 0.9rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.active {
+  background-color: lightseagreen;
+  color: white;
+  transition: all 0.35s;
 }
