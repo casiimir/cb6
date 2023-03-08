@@ -1,0 +1,21 @@
+.hamburger {
+  position: absolute;
+  top: 47px;
+  left: -400px;
+  width: 300px;
+  height: calc(100vh - 47px);
+  background-color: #fff;
+  border-right: 1px solid #ccc;
+  transition: all 0.35s ease;
+  display: block;
+}
+
+.show {
+  left: 0px;
+}
+
+@media screen and (min-width: 800px) {
+  .hamburger {
+    display: none;
+  }
+}

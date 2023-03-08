@@ -1,0 +1,12 @@
+.SideTrends {
+  border-left: 1px solid lightgrey;
+  width: 30%;
+  display: none;
+}
+
+/* ATTENZIONE AL MOBILE FIRST */
+@media screen and (min-width: 800px) {
+  .SideTrends {
+    display: block;
+  }
+}
