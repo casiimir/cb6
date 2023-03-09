@@ -1,10 +1,13 @@
-# Esercizio 08-03-2023
+# Esercizio 09-03-2023
 
-Sulla base della lezione del giorno, sostituire tutta la logica relativa ai componenti, interni a `<Content />` di modo che non utilizzino più i mocks ma che prendano dai seguenti indirizzi le informazioni necessarie:
+Sulla base della lezione del giorno, utilizzare il nuovo hook `useRef` su una funzionalità a vostro piacere. Importante aggiungere un commentino che cominci in questo modo:
 
-- https://dummyjson.com/posts
-- https://dummyjson.com/users
+```
+  // Esercizio 09-03-2023 - useRef
+  // ... descrizione della vostra funzionalità ...
+  // ...
+```
 
 # Avanzato
 
-- Creare un mock personalizzato per la lista dei `trends` e arricchirla a piacere.
+Sfruttare la `input` presente nel componente `<Header />` al fine di eseguire un filtro ricerca della lista dei messaggi. Filtrare per contenuto dell'immagine (chiave dell'oggetto in questione: `body`)

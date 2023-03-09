@@ -1,7 +1,14 @@
 .SideTrends {
+  position: absolute;
+  width: 28%;
   border-left: 1px solid lightgrey;
   width: 30%;
   display: none;
+  right: 0;
+  border: 2px solid red;
+  overflow: scroll;
+  height: 100vh;
+  transition: all 0.35s;
 }
 
 /* ATTENZIONE AL MOBILE FIRST */
