@@ -11,6 +11,11 @@ const Header = ({ setHeaderInputValue }) => {
     setShowMenu(!showMenu);
   };
 
+  const onHandleSubmit = (e) => {
+    e.preventDefault();
+    setHeaderInputValue(inputValue);
+  };
+
   return (
     <div className="Header">
       <div className="Header__up">
@@ -28,14 +33,16 @@ const Header = ({ setHeaderInputValue }) => {
           src="https://static.vecteezy.com/system/resources/previews/005/544/718/original/profile-icon-design-free-vector.jpg"
           alt="profile"
         />
-        <input
-          type="text"
-          placeholder="What's happening?"
-          value={inputValue}
-          onChange={(e) => setInputValue(e.target.value)}
-          required
-        />
-        <button onClick={() => setHeaderInputValue(inputValue)}>Search</button>
+        <form onSubmit={onHandleSubmit}>
+          <input
+            type="text"
+            placeholder="Search something ..."
+            value={inputValue}
+            onChange={(e) => setInputValue(e.target.value)}
+            required
+          />
+          <input type="submit" value="Search" />
+        </form>
         <img src="https://img.icons8.com/fluency/256/image.png" alt="image" />
         <img src="https://img.icons8.com/arcade/256/gif.png" alt="gif" />
         <img

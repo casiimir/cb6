@@ -36,7 +36,7 @@
   font-size: 30px;
 }
 
-.Header__down input {
+.Header__down input:nth-child(1) {
   padding: 0 0 0 10px;
   width: 80%;
   height: 28px;

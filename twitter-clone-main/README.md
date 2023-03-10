@@ -1,13 +1,4 @@
-# Esercizio 09-03-2023
+# Esercizio 10-03-2023
 
-Sulla base della lezione del giorno, utilizzare il nuovo hook `useRef` su una funzionalità a vostro piacere. Importante aggiungere un commentino che cominci in questo modo:
-
-```
-  // Esercizio 09-03-2023 - useRef
-  // ... descrizione della vostra funzionalità ...
-  // ...
-```
-
-# Avanzato
-
-Sfruttare la `input` presente nel componente `<Header />` al fine di eseguire un filtro ricerca della lista dei messaggi. Filtrare per contenuto dell'immagine (chiave dell'oggetto in questione: `body`)
+Sulla base della lezione del giorno, ricreare una sezione o modale che permetta la modifica di ogni singolo messaggio al click su apposito elemento.
+Per lo stile di questa modale o sezione seguite pure quanto fatto a lezione o siate più creativi!

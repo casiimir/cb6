@@ -5,7 +5,6 @@
   width: 30%;
   display: none;
   right: 0;
-  border: 2px solid red;
   overflow: scroll;
   height: 100vh;
   transition: all 0.35s;

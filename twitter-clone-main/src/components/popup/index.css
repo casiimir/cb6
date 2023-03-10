@@ -1,0 +1,11 @@
+.Popup {
+  border: 2px solid red;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  background-color: #01b5f1;
+  color: white;
+}
