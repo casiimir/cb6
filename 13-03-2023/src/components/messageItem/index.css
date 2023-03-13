@@ -1,0 +1,40 @@
+.MessageItem {
+  display: flex;
+  border-bottom: 1px solid lightgrey;
+  padding: 12px;
+}
+
+.MessageItem img {
+  width: 50px;
+  height: 50px;
+}
+
+.MessageItem__photo {
+  background-color: #01b5f180;
+  border-radius: 100%;
+}
+
+.MessageItem__content {
+  font-size: 0.9rem;
+  padding: 0 12px;
+}
+
+.MessageItem__content span:nth-child(1) {
+  font-weight: bold;
+}
+
+.MessageItem__content span:nth-child(2) {
+  color: rgb(172, 172, 172);
+  font-size: 0.9rem;
+}
+
+.MessageItem__content--icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.MessageItem__content--icons img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
