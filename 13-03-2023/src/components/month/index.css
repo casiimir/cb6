@@ -1,0 +1,16 @@
+.Month {
+  display: flex;
+  flex-direction: column;
+  color: gray;
+  padding: 10px;
+  width: 310px;
+  height: 400px;
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.15);
+}
+
+.Month__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  border-radius: 6px;
+}

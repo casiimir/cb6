@@ -1,14 +1,10 @@
-import SideMenu from "./components/sideMenu";
-import Content from "./components/content";
-import SideTrends from "./components/sideTrends";
 import "./App.css";
+import Calendar from "./components/calendar/Calendar";
 
 function App() {
   return (
     <div className="App">
-      <SideMenu />
-      <Content />
-      <SideTrends />
+      <Calendar />
     </div>
   );
 }

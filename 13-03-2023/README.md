@@ -1,13 +1,15 @@
-# Esercizio
+# Esercizio 1
 
-Sulla base della lezione del giorno creare un progetto chiamato `twitter-clone` utilizzando Vite.
+Sulla base della lezione del giorno, creare un progetto che implementi la logica degli `useState`, che in particolare:
 
-- Creare una struttura simile a quanto visto a lezione, in ottica mobile-first;
-- Completare almeno la sezione relativa ai messagi, `<Content />`;
-- Aiutarsi con i grafici come visto a lezione.
+- data una lista di 'cose da fare' (create pure un mock);
+- dato un `input` element;
+- dato un `button` element;
+- al click del pulsante aggiunga un elemento alla lista
 
-> Trovate in allegato i grafici che abbiamo realizzato a lezione
+Al fine della risoluzione del problema (una basilare todolist di sola aggiunta dei valori), è indispensabile utilizzare i controlled component.
 
 # Avanzato
 
-Completare tutta l'applicazione ad esclusione del componente `<TrendItem />`
+Ricreare il calendario, come visto a lezione, aggiungendo lo stile a piacere, ma che presenti quante più logiche al suo interno.
+(Noi abbiamo visto la logica per l'inserimento dei giorni per il relativo mese e lo switch da mese in mese, cominciare da questi)
