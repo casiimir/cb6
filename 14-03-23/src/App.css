@@ -1,0 +1,16 @@
+.App {
+}
+
+.App h1 {
+  color: white;
+  text-align: center;
+}
+
+.wrapper {
+  padding: 20px;
+  width: 300px;
+  margin: 0 auto;
+  border-radius: 6px;
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.35);
+  background-color: white;
+}

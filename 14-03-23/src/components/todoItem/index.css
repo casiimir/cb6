@@ -1,0 +1,22 @@
+.TodoItem {
+  font-size: 0.9rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.35s;
+}
+
+.TodoItem:hover {
+  color: white;
+  background-color: rgb(105, 90, 255);
+}
+
+.TodoItem p {
+  padding: 4px 8px;
+}
+
+.completed {
+  color: white;
+  background-color: rgb(105, 90, 255);
+}
