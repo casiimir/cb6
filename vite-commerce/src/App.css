@@ -1,0 +1,13 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.App__miniCards {
+  display: flex;
+  gap: 10px;
+  margin: 0 60px;
+  padding: 10px;
+  overflow-x: scroll;
+}
