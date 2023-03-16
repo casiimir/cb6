@@ -1,9 +1,15 @@
 .Navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  height: 120px;
   background-color: #ff4e00;
   background-image: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
+  z-index: 1;
 }
 
 .Navbar ul {
@@ -35,4 +41,12 @@
   border-radius: 6px;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.35);
   outline: none;
+}
+
+.Navbar__cart {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: white;
+  font-size: 2rem;
 }

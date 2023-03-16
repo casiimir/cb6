@@ -1,13 +1,14 @@
 import { useState } from "react";
 import "./index.css";
 
-const Navbar = () => {
+const Navbar = ({ cartListLength, setSearchInputValue }) => {
   const [inputValue, setInputValue] = useState("");
 
   const onHandleInput = (e) => setInputValue(() => e.target.value);
 
   const onHandleSubmit = (e) => {
     e.preventDefault();
+    setSearchInputValue(() => inputValue);
     // TODO: trasmettere il valore della input (inputValue) all'elemento di ricerca
   };
 
@@ -27,6 +28,9 @@ const Navbar = () => {
           required
         />
       </form>
+      <div className="Navbar__cart">
+        <p>{cartListLength} 🛒</p>
+      </div>
     </div>
   );
 };
