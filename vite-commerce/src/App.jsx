@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import CardList from "./components/cardList";
+import Cart from "./components/cart";
 import Hero from "./components/hero";
 import Footer from "./components/footer/Footer";
 import MiniCard from "./components/miniCard/MiniCard";
@@ -10,12 +11,15 @@ import "./App.css";
 
 function App() {
   const [searchInputValue, setSearchInputValue] = useState("");
-  const [cartList, setCardList] = useState([]);
+  const [cartList, setCartList] = useState(
+    JSON.parse(localStorage.getItem("cartList")) || []
+  );
   const [miniCards, setMiniCards] = useState([]);
   const [modalContext, setModalContext] = useState({
     productData: {},
     isVisibile: false,
   });
+  const [modalCartVisibility, setModalCartVisibility] = useState(false);
 
   useEffect(() => {
     GET(
@@ -32,6 +36,7 @@ function App() {
       <Navbar
         cartListLength={localStorageCartList || cartList.length}
         setSearchInputValue={setSearchInputValue}
+        setModalCartVisibility={setModalCartVisibility}
       />
       <Hero />
       <div className="App__miniCards">
@@ -53,9 +58,13 @@ function App() {
       {modalContext.isVisibile && (
         <ProductDetail
           productData={modalContext.productData}
-          setCardList={setCardList}
+          setCartList={setCartList}
           setModalContext={setModalContext}
         />
+      )}
+
+      {modalCartVisibility && (
+        <Cart cartList={cartList} setCartList={setCartList} />
       )}
     </div>
   );

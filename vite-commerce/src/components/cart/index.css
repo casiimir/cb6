@@ -1,0 +1,42 @@
+.Cart {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: calc(120px + 10px + 68vh);
+  width: 40vw;
+  padding: 10px 30px;
+  margin-top: 130px;
+  background-color: #fee5b2;
+  box-shadow: -1px -1px 4px 2px rgba(0, 0, 0, 0.35);
+  overflow-y: scroll;
+  transition: all 0.35s;
+}
+
+.Cart__product {
+  position: relative;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.Cart__product img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.Cart__product--delete {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  transition: transform 0.35s;
+}
+
+.Cart__product--delete:hover {
+  transform: scale(1.5) rotate(90deg);
+}

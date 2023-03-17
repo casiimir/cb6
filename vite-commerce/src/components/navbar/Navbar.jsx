@@ -1,7 +1,11 @@
 import { useState } from "react";
 import "./index.css";
 
-const Navbar = ({ cartListLength, setSearchInputValue }) => {
+const Navbar = ({
+  cartListLength,
+  setSearchInputValue,
+  setModalCartVisibility,
+}) => {
   const [inputValue, setInputValue] = useState("");
 
   const onHandleInput = (e) => setInputValue(() => e.target.value);
@@ -9,7 +13,10 @@ const Navbar = ({ cartListLength, setSearchInputValue }) => {
   const onHandleSubmit = (e) => {
     e.preventDefault();
     setSearchInputValue(() => inputValue);
-    // TODO: trasmettere il valore della input (inputValue) all'elemento di ricerca
+  };
+
+  const onHandleCartClick = () => {
+    setModalCartVisibility((prev) => !prev);
   };
 
   return (
@@ -29,7 +36,7 @@ const Navbar = ({ cartListLength, setSearchInputValue }) => {
         />
       </form>
       <div className="Navbar__cart">
-        <p>{cartListLength} 🛒</p>
+        <p onClick={onHandleCartClick}>{cartListLength} 🛒</p>
       </div>
     </div>
   );

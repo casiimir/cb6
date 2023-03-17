@@ -7,7 +7,7 @@ const GalleryModal = ({ imgUrl, imgAlt, setGalleryVisible }) => {
   );
 };
 
-const ProductDetail = ({ productData, setModalContext, setCardList }) => {
+const ProductDetail = ({ productData, setModalContext, setCartList }) => {
   const [isGalleryVisible, setGalleryVisible] = useState(false);
   const [selectedPhoto, setSelectedPhoto] = useState("");
 
@@ -21,11 +21,31 @@ const ProductDetail = ({ productData, setModalContext, setCardList }) => {
     const localStorageCartItems =
       JSON.parse(localStorage.getItem("cartList")) || [];
 
-    setCardList((prev) => [...prev, productData]);
-    localStorage.setItem(
-      "cartList",
-      JSON.stringify([...localStorageCartItems, productData])
+    const isProductDataInsideLocalStorage = !localStorageCartItems.find(
+      (product) => product.id === productData.id
     );
+
+    setCartList((prev) =>
+      !!prev.find((product) => product.id === productData.id)
+        ? [...prev]
+        : [...prev, productData]
+    );
+
+    if (isProductDataInsideLocalStorage) {
+      localStorage.setItem(
+        "cartList",
+        JSON.stringify([...localStorageCartItems, productData])
+      );
+
+      alert(`Apposto, ${productData.title} aggiunto al carrello!`);
+    } else {
+      alert(`Nono, ${productData.title} è già presente nel carrello!`);
+    }
+
+    setModalContext((prev) => ({
+      ...prev,
+      isVisibile: false,
+    }));
   };
 
   const onHandleImageClick = (imgUrl) => {
