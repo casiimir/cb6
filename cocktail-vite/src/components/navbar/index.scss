@@ -1,0 +1,38 @@
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 12px;
+
+  ul {
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    list-style-type: none;
+
+    li {
+      font-weight: bold;
+      cursor: pointer;
+    }
+  }
+
+  img {
+    width: 30px;
+    height: 30px;
+  }
+
+  button {
+    width: 130px;
+    height: 30px;
+    border: 0;
+    border-radius: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.35s;
+
+    &:hover {
+      background-color: rgb(0, 0, 0);
+      color: white;
+    }
+  }
+}
