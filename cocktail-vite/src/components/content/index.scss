@@ -1,6 +1,5 @@
+@import "../../styles/mixins";
+
 .Content {
-  display: flex;
-  justify-content: center;
-  gap: 50px;
-  flex-wrap: wrap;
+  @include flex-container(row, center, flex-start, 50px, wrap);
 }

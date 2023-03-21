@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto+Condensed:wght@400;700&family=Rubik:wght@400;800&display=swap");
+@import "./styles/variables";
+
+::selection {
+  color: $secondary-color;
+  background: $primary-color;
+}
+
+body {
+  margin: 0;
+  background-color: $secondary-color;
+  color: $primary-color;
+  font-family: "Oswald", sans-serif;
+}

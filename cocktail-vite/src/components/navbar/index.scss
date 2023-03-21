@@ -1,8 +1,11 @@
+@import "../../styles/variables";
+
 .Navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 6px 12px;
+  height: 50px;
 
   ul {
     display: flex;
@@ -31,8 +34,8 @@
     transition: background-color 0.35s;
 
     &:hover {
-      background-color: rgb(0, 0, 0);
-      color: white;
+      background-color: $active-color;
+      color: $secondary-color;
     }
   }
 }
