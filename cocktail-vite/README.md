@@ -1,7 +1,13 @@
 # Esercizio 1
 
-Sulla base della lezione del giorno, rintracciare e creare tutte le variabili e i mixins necessari alla nostra applicazione. Chiaramente usare SASS.
+Sulla base della lezione del giorno installare `react-css-modules`, e convertire la vostra applicazione utilizzando questo pacchetto.
+
+- cambiare in nome alle classi, adattandolo a css-module
 
 # Avanzato
 
-- Creare un componente che funga da 'simil-modale' al cui click su ogni singolo prodotto, mi apra la relativa scheda di informazioni.
+- Aggiungere un hamburger menu per il responsive
+
+- Aggiungere il footer
+
+- Completare lo stile secondo gusto personale;

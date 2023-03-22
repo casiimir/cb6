@@ -1,4 +1,5 @@
-import "./index.scss";
+import { valuesExtractor } from "../../utils/funcs";
+import styles from "./index.module.scss";
 
 const Card = ({ data, setSingleItemContext }) => {
   const onHandleClick = () =>
@@ -6,18 +7,20 @@ const Card = ({ data, setSingleItemContext }) => {
       ...prev,
       payload: data,
       isVisible: true,
+      positionList: data.positionList,
     }));
 
+  const ingredientsData = () => valuesExtractor(data, "strIngredient");
+
   return (
-    <div className="Card" onClick={onHandleClick}>
+    <div className={styles.Card} onClick={onHandleClick}>
       <img src={data.strDrinkThumb} alt={data.strDrink} />
-      <div className="Card__text">
+      <div className={styles.text}>
         <h2>{data.strDrink}</h2>
         <ul>
-          <li>{data.strIngredient1}</li>
-          <li>{data.strIngredient2}</li>
-          <li>{data.strIngredient3}</li>
-          <li>{data.strIngredient4}</li>
+          {ingredientsData().map((ingredient) => (
+            <li key={ingredient}>{ingredient}</li>
+          ))}
         </ul>
       </div>
     </div>

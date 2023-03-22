@@ -1,0 +1,5 @@
+@import "../../styles/mixins";
+
+.Content {
+  @include flex-container(row, center, flex-start, 50px, wrap);
+}

@@ -1,0 +1,48 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.Hero {
+  @include flex-container(column, center, center);
+
+  hr {
+    width: 80%;
+    border: 0;
+    border-bottom: 1px dotted $primary-color;
+    border-width: 4px;
+  }
+
+  h1 {
+    font-size: 3rem;
+    color: $primary-color;
+  }
+
+  .firstList {
+    @include flex-container;
+    gap: 40px;
+    padding: 0;
+    list-style-type: none;
+
+    li {
+      font-size: 1.1rem;
+      font-weight: bold;
+    }
+  }
+
+  .secondList {
+    display: flex;
+    gap: 40px;
+    padding: 0;
+    list-style-type: none;
+
+    li {
+      padding: 4px 8px;
+      cursor: pointer;
+      border-bottom: 1px solid $primary-color;
+
+      &:hover {
+        background-color: $primary-color;
+        color: $secondary-color;
+      }
+    }
+  }
+}

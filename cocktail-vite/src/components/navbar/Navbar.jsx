@@ -1,8 +1,8 @@
-import "./index.scss";
+import styles from "./index.module.scss";
 
 const Navbar = () => {
   return (
-    <div className="Navbar">
+    <div className={styles.Navbar}>
       <ul>
         <li>Home</li>
         <li>About</li>

@@ -4,8 +4,9 @@ import { filteredList } from "./utils/funcs";
 import Navbar from "./components/navbar";
 import Hero from "./components/hero";
 import Content from "./components/content";
-import "./App.scss";
 import SingleItem from "./components/singleItem/SingleItem";
+// import "./App.scss";
+import styles from "./App.module.scss";
 
 function App() {
   const [cocktailList, setCocktailList] = useState([]);
@@ -13,6 +14,7 @@ function App() {
   const [singleItemContext, setSingleItemContext] = useState({
     isVisible: false,
     payload: {},
+    positionList: null,
   });
 
   useEffect(() => {
@@ -22,12 +24,13 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
+    <div className={styles.App}>
       <Navbar />
       {singleItemContext.isVisible ? (
         <SingleItem
-          data={singleItemContext.payload}
+          data={singleItemContext}
           setSingleItemContext={setSingleItemContext}
+          filteredList={filteredList(cocktailList, "strCategory", category)}
         />
       ) : (
         <>
