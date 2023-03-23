@@ -1,6 +1,8 @@
 import styles from "./index.module.scss";
 
-const Navbar = () => {
+const Navbar = ({ setReservationVisibility }) => {
+  const onHandleClick = () => setReservationVisibility(true);
+
   return (
     <div className={styles.Navbar}>
       <ul>
@@ -13,7 +15,7 @@ const Navbar = () => {
         src="https://purepng.com/public/uploads/large/purepng.com-cocktailcocktaildrinkgeneric-alcoholic-mixed-drinkbeverage-1411527240706fzrjn.png"
         alt="logo"
       />
-      <button>prenota</button>
+      <button onClick={onHandleClick}>prenota</button>
     </div>
   );
 };

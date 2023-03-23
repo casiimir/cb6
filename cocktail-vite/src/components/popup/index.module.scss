@@ -1,0 +1,14 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.Popup {
+  position: fixed;
+  top: 20px;
+  left: calc(50vw - 100px);
+  width: 200px;
+  padding: 0 12px;
+  background-color: $secondary-color;
+  border-radius: 12px;
+  box-shadow: 0 0 4px $primary-color-alpha;
+  z-index: 9;
+}
