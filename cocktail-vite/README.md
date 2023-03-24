@@ -1,9 +1,5 @@
 # Esercizio 1
 
-Sulla base della lezione del giorno, spostare il componente `<Popup />`all'interno del componente `<App />`, gestire la logica adeguandola al contesto e far scomparire il Popup dopo 2 secondi.
+Sulla base della lezione del giorno, modificare il componente `<Hero />` adattandolo agli Styled Components.
 
-> Attenzione: La modale per prenotare il posto, al click del pulsante `Prenota!` scompare!
-
-# Avanzato
-
-Scrivere la logica relativa alla prenotazione, come visto durante la lezione.
+> Attenzione: Per questo componente non deve esistere alcun foglio di stile. Gestire eventuali mediaqueries sempre Styled Components.
