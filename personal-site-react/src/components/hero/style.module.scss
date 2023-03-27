@@ -1,0 +1,72 @@
+.hero {
+    position: relative;
+    @include size(100%);
+    min-height: 100vh;
+    overflow: hidden;
+
+    &::after {
+        content: "";
+        position: absolute;
+        @include size(80%);
+        top: 0;
+        right: -20%;
+        @include background-gradient(-90deg, $dark, $skyblue, 0.65);
+        border-radius: 40px;
+        transform: rotate(-45deg);
+    }   
+}
+
+.video {
+    position: absolute;
+    @include size(100%);
+
+    video {
+        object-fit: cover;
+        @include size(100%);
+    }
+}
+
+.content {
+    // background-color: red;
+    position: relative;
+    z-index: 2;
+    color: $light;
+    max-width: 420px;
+}
+
+.label {
+    margin-bottom: 12px;
+}
+
+.title {
+    margin-bottom: 24px;
+}
+
+.image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 480px;
+    height: 480px;
+    z-index: 1;
+    @include mobile {
+        max-width: 280px;
+        width: 100%;
+    }
+    
+    @include tablet {
+        max-width: 480px;
+        width: 100%;
+    }
+
+    @include desktop {
+        max-width: 680px;
+        width: 100%;
+    }
+
+    img {
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+    }
+}

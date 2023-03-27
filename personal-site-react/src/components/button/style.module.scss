@@ -1,0 +1,34 @@
+.button {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 4px;
+    padding-right: 4px;
+    cursor: pointer;
+    font-family: $font-family-primary;
+    font-size: em(18px);
+    text-transform: uppercase;
+}
+
+.wrapper {
+    padding: 12px 20px;
+    box-shadow: 6px 6px 0 -1px $dark;
+    transition: all $timeMedium ease-in-out;
+    &.primary {
+        background-color: $primary;
+        color: $light;
+        &:hover {
+            background-color: $dark;
+            box-shadow: 6px 6px 0 -1px $primary;
+        }
+    }
+    
+    &.secondary {
+        background-color: $secondary;
+        color: $dark;
+        &:hover {
+            background-color: $dark;
+            color: $light;
+            box-shadow: 6px 6px 0 -1px $secondary;
+        }
+    }
+}

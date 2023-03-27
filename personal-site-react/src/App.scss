@@ -1,0 +1,7 @@
+@import "scss/all";
+
+.App {
+  display: block;
+  @include size(100%);
+}
+

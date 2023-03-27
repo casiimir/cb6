@@ -1,0 +1,53 @@
+.about {
+    position: relative;
+}
+
+.image {
+    @include mobile {
+        width: 100%;
+        order: 2;
+    }
+    
+    @include min-tablet {
+        width: 50%;
+    }
+
+    img {
+        object-fit: contain;
+        @include size(100%);
+    }
+}
+
+.content {
+    @include mobile {
+        width: 100%;
+        order: 1;
+        margin-bottom: 40px;
+    }
+    
+    @include min-tablet {
+        width: 50%;
+        padding-left: 40px;
+    }
+
+    .label {
+        color: $primary;
+        margin-bottom: 12px;
+    }
+
+    .title {
+        color: $dark;
+        margin-bottom: 24px;
+    }
+
+    .description {
+        color: $dark;
+        margin-bottom: 24px;
+    }
+
+    .buttons {
+        display: flex;
+        gap: 20px;
+    }
+}
+
