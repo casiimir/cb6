@@ -1,15 +1,10 @@
 # Esercizio 1
 
-Sulla base della lezione del giorno, a partire dal concept delle api di Musement - vedi link sotto:
+Sulla base della lezione del giorno, replicare quanto visto a lezione, creando una pagina statica che renderizzi una lista di prodotti, al cui click rimandi alla pagina dinamica con maggiori informazioni sul prodotto selezionato.
 
-- Una pagina Home `/`
-- Una pagina singola attività (dinamica) `/activity/:id`
-- Una pagina singola città (dinamica) `/city/:id`
-- Una pagina statica about `/about`
-- Strutturare una navbar e un footer
-
-> Musement API: https://api.musement.com/api/v3/activities.json
+> API: https://fakestoreapi.com/products
 
 # Avanzato
 
-Leggere un pò di documentazione `https://reactrouter.com/en/main/start/overview`
+Tentare l'applicazione dello stesso principio utilizzando però questa api:
+`https://failteireland.portal.azure-api.net/docs/services/opendata-api-v1/operations/attractions-get?`

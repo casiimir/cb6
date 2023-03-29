@@ -1,0 +1,13 @@
+.Activity {
+  display: flex;
+  align-items: center;
+
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+
+  img {
+    width: 50%;
+    height: 300px;
+    object-fit: cover;
+  }
+}
