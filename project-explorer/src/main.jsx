@@ -3,6 +3,7 @@ import { createRoot } from "react-dom/client";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import MainLayout from "./layouts/mainLayout";
+import City from "./pages/city/id";
 import Activities from "./pages/activities";
 import Activity from "./pages/activities/id";
 import {
@@ -20,7 +21,7 @@ const router = createBrowserRouter(
       <Route path="about" element={<About />} />
       <Route path="activities" element={<Activities />} />
       <Route path="activities/:id" element={<Activity />} />
-      <Route path="city/:id" element={<h1>Activity</h1>} />
+      <Route path="city/:id" element={<City />} />
     </Route>
   )
 );

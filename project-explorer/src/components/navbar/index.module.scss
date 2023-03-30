@@ -2,13 +2,30 @@
   position: fixed;
   top: 0;
   left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   height: 50px;
-  width: 100vw;
+  width: 100%;
+  padding: 0 40px;
   background-color: lightgrey;
+  box-sizing: border-box;
 
   ul {
+    padding: 0;
     display: flex;
     gap: 20px;
     list-style-type: none;
+  }
+
+  form {
+    input {
+      padding-left: 20px;
+      height: 30px;
+      width: 200px;
+      border-radius: 12px;
+      border: 0;
+      outline: none;
+    }
   }
 }

@@ -1,28 +1,27 @@
 import { useState, useEffect } from "react";
-import CardList from "../../components/cardList/CardList";
+import { GET } from "../../utils/http";
+import ActivitiesList from "../../components/activitiesList/ActivitiesList";
 import styles from "../../styles/pages/Activities.module.scss";
 
 export default function Activities() {
-  const [itemList, setItemList] = useState([]);
+  const [activities, setActivities] = useState([]);
 
   useEffect(() => {
-    fetch("https://fakestoreapi.com/products")
-      .then((res) => res.json())
-      .then((data) => setItemList(data));
+    GET("activities").then((res) => setActivities(() => res.results));
   }, []);
 
-  const filterList = (list, category) =>
-    list.filter((item) => item.category === category);
+  const filterActivities = (list, type) =>
+    list.filter((item) => item["@type"].includes(type));
 
   return (
     <div className={styles.Activities}>
       <section>
-        <h2>Categoria: Elettronica</h2>
-        <CardList data={filterList(itemList, "electronics")} />
+        <h2>Restaurants</h2>
+        <ActivitiesList data={activities} />
       </section>
       <section>
-        <h2>Categoria: Vestiti</h2>
-        <CardList data={filterList(itemList, "men's clothing")} />
+        <h2>Museum</h2>
+        <ActivitiesList data={filterActivities(activities, "Museum")} />
       </section>
     </div>
   );

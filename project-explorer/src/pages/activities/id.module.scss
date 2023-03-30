@@ -10,4 +10,19 @@
     height: 300px;
     object-fit: cover;
   }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style-type: none;
+    border-left: 2px solid lightgray;
+
+    li {
+      img {
+        width: 100px;
+        height: 50px;
+      }
+    }
+  }
 }
