@@ -1,11 +1,16 @@
 # Esercizio 1
 
-Sulla base della lezione del giorno, replicare quanto visto a lezione, riguardo alla pagine delle attrazioni, utilizzare il link in fondo.
+Sulla base della lezione del giorno, replicare quanto visto a lezione, la consegna può considerarsi arbitraria purchè si rispettino queste condizioni:
 
-> API: https://fakestoreapi.com/products
+- implementare una o più queries
+- invocare le queries su una pagina diversa da quella dove vengono create
 
 # Avanzato
 
-Tentare l'applicazione dello stesso principio, sfruttando la input presente nella Navbar, di modo che venga effettuata una ricerca specifica (identica) ad un Hotel o altro parametro a scelta. Renderizzare dunque la singola pagina come pagina dinamica di City
+In visione della settimana prossima, ultima lezione del bootcamp, consiglio la lettura dei seguenti articoli legati ai concetti di `stato globale` e `Next.js`:
 
-`https://failteireland.portal.azure-api.net/docs/services/opendata-api-v1/operations/attractions-get?`
+- https://coderpad.io/blog/development/global-state-management-react/
+
+- https://www.freecodecamp.org/news/how-to-manage-state-in-your-react-apps/
+
+- https://snipcart.com/blog/next-js-vs-react
