@@ -1,11 +1,15 @@
 # Esercizio 1
 
-Sulla base della lezione del giorno, ricreare un componente counter utilizzando `createContext`, `useContext` e `useReducer`.
+Sulla base della lezione del giorno, a partire dal vostro progetto `react-states` (quindi quello che avete consegnato ieri come esercitazione):
 
-> Attenzione: provare a svolgere l'esercizio ragionandoci su, magari partendo prima dalla versione con `useState`e man mano aggiungere il nuovo codice
+- Rimuovere le fetch per i dati;
+- Costruire un mock che gestisca la lista delle singole todos;
+- Implementare questa logica utilizzando lo stato globale
 
-# Avanzato
+# Avanzato 1
 
-Provare a leggere cosa rappresenta il termine `payload` e implementarlo in uno stato globale al fine di realizzare una todo-list utilizzando esclusivamente `createContext`, `useContext` e `useReducer`.
+Gestire inoltre la logica relativa alle input che devono presentare uno stato `controllato` (controlled-components) ma non utilizzando `useState` bensì provare a farlo funzionare utilizzando lo stato globale.
 
-> Questo è un progetto ambizioso, non preoccupatevi sarà oggetto di analasi della lezione di domani
+# Avanzato 2
+
+Implementare infine le logiche relative alla modifica di una todo (la chiave `completed` per esempio) e quelle relative alla cancellazione della todo stessa.
