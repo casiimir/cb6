@@ -1,9 +1,15 @@
 # Esercizio 1
 
-Sulla base della lezione del giorno, completare il progetto della todo-list e aggiungere le logiche relative alla modale per aggiungere una nuova task. Gestire il valore `isModalVisibile` da stato globale.
+Sulla base della lezione del giorno, a partire dal vostro progetto `react-states` (quindi quello che avete consegnato ieri come esercitazione):
 
-# Avanzato
+- Rimuovere le fetch per i dati;
+- Costruire un mock che gestisca la lista delle singole todos;
+- Implementare questa logica utilizzando lo stato globale
 
-Aggiungere alle logiche della modale la possibilità di aggiungere un ulteriore oggetto (todo) alla lista delle todos `tasksListData`.
+# Avanzato 1
 
-> (in locale, al reload si perderà ed è giusto così).
+Gestire inoltre la logica relativa alle input che devono presentare uno stato `controllato` (controlled-components) ma non utilizzando `useState` bensì provare a farlo funzionare utilizzando lo stato globale.
+
+# Avanzato 2
+
+Implementare infine le logiche relative alla modifica di una todo (la chiave `completed` per esempio) e quelle relative alla cancellazione della todo stessa.

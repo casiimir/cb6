@@ -24,6 +24,11 @@
       font-size: 1.1rem;
       filter: grayscale(0.1) contrast(0.9) saturate(1.6);
       cursor: pointer;
+      transition: background 0.35s;
+
+      &:hover {
+        background: rgb(144, 31, 11);
+      }
     }
   }
 
@@ -34,6 +39,11 @@
 
     p {
       font-size: 1.8rem;
+
+      &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
     }
   }
 }

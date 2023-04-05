@@ -1,17 +1,17 @@
 import { useState, useEffect, useContext } from "react";
 import { Context } from "../../store";
-import { GET } from "../../utils/http";
+// import { GET } from "../../utils/http";
 import Task from "../task/Task";
 import styles from "./index.module.scss";
 
 const TasksList = () => {
-  const { state, dispatch } = useContext(Context);
+  const { state } = useContext(Context);
 
-  useEffect(() => {
-    GET("todos").then((res) => {
-      dispatch({ type: "SET_TASKS_LIST", payload: res.todos });
-    });
-  }, []);
+  // useEffect(() => {
+  //   GET("todos").then((res) => {
+  //     dispatch({ type: "SET_TASKS_LIST", payload: res.todos });
+  //   });
+  // }, []);
 
   return (
     <div className={styles.TasksList}>
